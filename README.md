@@ -1,0 +1,27 @@
+# reciept-merger
+
+This repo contains a simple Python script for making a set of one-page pdf files into a jpg collage of the images of the pdf files  
+
+## Pre-requisites
+
+*Pyton3* and executable `python` pointing to Python3  
+Libraries:
+```
+$ pip install pdf2image
+$ pip install Pillow
+```
+You probably have to install `poppler` in order to use `pdf2image`, see instrucions in (https://github.com/Belval/pdf2image).  
+For MacOS:
+```
+$ brew install poppler
+```
+
+## Usage
+
+```
+./run.sh <input folder> <output file name>
+```
+where `<input folder>` is the folder containing the pdf files. For instance:
+```
+$ ./run.sh /Users/frode/reciept collage.jpg
+```
