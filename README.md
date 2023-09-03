@@ -4,13 +4,13 @@ This repo contains a simple Python script for making a set of one-page pdf files
 
 ## Pre-requisites
 
-*Pyton3* and executable `python` pointing to Python3  
+*Pyton 3* installed and executable `python` pointing to this
 Libraries:
 ```
 $ pip install pdf2image
 $ pip install Pillow
 ```
-You probably have to install `poppler` in order to use `pdf2image`, see instrucions in (https://github.com/Belval/pdf2image).  
+You probably need to install `poppler` in order to use `pdf2image`, see instructions here: https://github.com/Belval/pdf2image.  
 For MacOS:
 ```
 $ brew install poppler
@@ -23,5 +23,5 @@ $ brew install poppler
 ```
 where `<input folder>` is the folder containing the pdf files. For instance:
 ```
-$ ./run.sh /Users/frode/reciept collage.jpg
+$ ./run.sh /Users/frode/reciepts collage.jpg
 ```
