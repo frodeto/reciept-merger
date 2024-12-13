@@ -23,9 +23,11 @@ def pdfs_to_collage(input_folder: str, output_image_name: str):
         pdf_path = os.path.join(input_folder, pdf_file)
         images_from_pdf = convert_from_path(pdf_path)
 
-        # We're only dealing with single-page PDFs so just get the first image
+    # Handle up to two pages
         if images_from_pdf:
             images.append(images_from_pdf[0])
+        if len(images_from_pdf) > 1:
+            images.append(images_from_pdf[1])
 
     # Calculate number of rows for the collage
     imgs_per_row = 4
