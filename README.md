@@ -1,6 +1,6 @@
 # reciept-merger
 
-This repo contains a simple Python script for making a set of one-page pdf files into a jpg collage of the images of the pdf files  
+This repo contains a simple Python script for making a set (folder) of 1-2 page pdf files or jpg or png files into a single jpg collage of the images of the files in the folder  
 
 ## Pre-requisites
 
